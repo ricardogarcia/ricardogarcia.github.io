@@ -28,17 +28,13 @@ html,
 body {
   height: 100%;
   background-color: #222;
+  font-family: "ProximaNova-Regular";
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  background-image: url('nature.jpg');
-  background-repeat:no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -48,7 +44,13 @@ body {
   height: 100%; /* For at least Firefox */
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  background-image: url('nature.jpg');
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
 .site-wrapper-inner {
@@ -182,4 +184,45 @@ body {
 .btn-default {
   background-color: black;
   color:white;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('proxima_nova_bold-webfont.woff2') format('woff2'),
+         url('proxima_nova_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('proxima_nova_semibold-webfont.woff2') format('woff2'),
+         url('proxima_nova_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('proxima_nova_regular-webfont.woff2') format('woff2'),
+         url('proxima_nova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.project-list {
+  position:relative;
+  width: 98%;
+  text-align: center;
+  font-family: "ProximaNova-Bold";
+  font-size: 26px;
+  align-items: center;
+  border-radius:5px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.project {
+  mix-blend-mode:difference;
+  padding:10px;
 }
