@@ -227,6 +227,8 @@ body {
 }
 
 .project {
+  font-family: "ProximaNova-Semibold";
+  font-size: 18px;
   mix-blend-mode:difference;
   padding:10px;
 }
