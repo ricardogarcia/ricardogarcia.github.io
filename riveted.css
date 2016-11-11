@@ -215,11 +215,15 @@ body {
   position:relative;
   width: 98%;
   text-align: center;
-  font-family: "ProximaNova-Bold";
+  font-family: "ProximaNova-Regular";
   font-size: 26px;
   align-items: center;
   border-radius:5px;
   background-color: rgba(0,0,0,0.5);
+}
+
+.lead {
+    font-family: "ProximaNova-Regular";
 }
 
 .project {
