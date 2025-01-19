@@ -20,6 +20,12 @@
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(5px);
         }
+        .content-box {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -36,7 +42,7 @@
 
     <main class="container">
         <div class="grid">
-            <section>
+            <section class="content-box">
                 <hgroup>
                     <h2>Welcome to Riveted</h2>
                     <h3>Specialists in Web, Mobile, and Cryptocurrency Consulting</h3>
@@ -49,22 +55,6 @@
             </section>
         </div>
     </main>
-
-    <section aria-label="Subscribe example">
-        <div class="container">
-            <article>
-                <hgroup>
-                    <h2>Stay Updated</h2>
-                    <h3>Subscribe to our newsletter for the latest insights in tech</h3>
-                </hgroup>
-                <form class="grid">
-                    <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="First Name" required>
-                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Email" required>
-                    <button type="submit" onclick="event.preventDefault()">Subscribe</button>
-                </form>
-            </article>
-        </div>
-    </section>
 
     <footer class="container">
         <small><a href="#services">Services</a> • <a href="#about">About</a> • <a href="#contact">Contact</a></small>
