@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="dark"> <!-- Ensures dark colors -->
     <title>Riveted - Web & Mobile Tech Consultancy</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
         :root {
             --primary-color: #1e90ff;
-            --text-color: #fff; /* All text is white */
-            --background-color: #000; /* Entire background is black */
+            --text-color: #fff; /* White text */
+            --background-color: #000; /* Black background */
         }
 
         body {
@@ -21,94 +20,68 @@
             color: var(--text-color);
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
-            color-scheme: dark; /* Enforce dark colors */
         }
 
-        nav {
-            width: 100%;
-            padding: 1em;
-            background: var(--background-color); /* Black background for header */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-            position: fixed;
-            top: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 10;
+        header, footer {
+            text-align: center;
+            background: var(--background-color);
+            padding: 1em 0;
         }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1em;
-            padding: 0;
+        header h1, footer p {
+            color: var(--text-color);
             margin: 0;
         }
 
-        nav a {
-            text-decoration: none;
-            color: var(--text-color); /* White links */
-            font-weight: bold;
-        }
-
-        .morph-container {
+        .video-container {
             display: flex;
+            flex: 1;
             justify-content: center;
             align-items: center;
-            height: 70%;
-            width: 100%;
-            position: relative;
+            padding: 1em;
         }
 
-        .morph video {
-            width: 100%; /* Ensure the video displays full size */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 10px; /* Optional styling */
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
-        main {
+        nav {
             text-align: center;
-            padding: 2em;
+            padding: 0.5em 0;
         }
 
-        footer {
-            width: 100%;
-            text-align: center;
-            padding: 1em 0;
-            background: var(--background-color); /* Black background for footer */
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 1em;
         }
 
-        h1, h2, h3, p, ul, li, strong {
-            color: var(--text-color); /* Ensures all text is white */
+        nav a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Riveted</h1>
+    </header>
+
     <nav>
-        <strong>Riveted</strong>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <main>
-        <div class="morph-container">
-            <div class="morph">
-                <video src="videos/consultancy-video.mp4" autoplay muted playsinline></video>
-            </div>
-        </div>
-        <h1>Bringing Web & Mobile to Life</h1>
-        <p>Innovative solutions for your web and mobile applications, coupled with cutting-edge cryptocurrency consulting.</p>
-    </main>
+    <div class="video-container">
+        <video src="images/consultancy-video.mp4" autoplay muted playsinline></video>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Riveted</p>
+        <p>&copy; 2025 Riveted - All Rights Reserved</p>
     </footer>
 </body>
 </html>
