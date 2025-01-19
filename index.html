@@ -1,59 +1,76 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="riveted.css"/>
-<script src="fastclick.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riveted - Web, Mobile & Cryptocurrency Consultancy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+        }
+        nav, footer {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+        }
+    </style>
 </head>
 <body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Riveted</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" role="button">Contact</a></li>
+        </ul>
+    </nav>
 
-  <div class="site-wrapper">
-
-        <div class="site-wrapper-inner">
-
-          <div class="cover-container">
-
-            <div class="masthead clearfix">
-              <div class="inner">
-                <h3 class="masthead-brand">Riveted</h3>
-                <nav>
-                  <ul class="nav masthead-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-
-            <div class="inner cover">
-              <h1 class="cover-heading">Expert Design. Scalable Technology.</h1>
-              <p class="lead">Riveted is the embodiment of passion for software excellence</p>
-              <p class="lead">
-                <a href="/about.html" class="btn btn-lg btn-default">Learn more</a>
-              </p>
-            </div>
-
-
-
-          </div>
-
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to Riveted</h2>
+                    <h3>Specialists in Web, Mobile, and Cryptocurrency Consulting</h3>
+                </hgroup>
+                <p>At Riveted, we help businesses build world-class web and mobile applications while also offering expertise in the fast-growing world of cryptocurrency and blockchain technology.</p>
+                <figure>
+                    <img src="images/office_setup.jpg" alt="Professional office setup with coding and tools">
+                    <figcaption><a href="#" target="_blank">Innovative Workspace</a></figcaption>
+                </figure>
+                <h3>Our Expertise</h3>
+                <p>Our core focus lies in developing web and mobile software solutions tailored to your needs. Whether you're building a responsive website, a powerful mobile app, or both, Riveted is your trusted partner.</p>
+                <h3>Blockchain & Cryptocurrency</h3>
+                <p>In addition to web and mobile development, we offer specialized consulting on blockchain integration, cryptocurrency strategies, and secure implementation of decentralized technologies.</p>
+            </section>
         </div>
+    </main>
 
-      </div>
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Stay Updated</h2>
+                    <h3>Subscribe to our newsletter for the latest insights in tech</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="First Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Email" required>
+                    <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section>
 
-  <!-- Latest compiled and minified JavaScript -->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-61396944-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <footer class="container">
+        <small><a href="#services">Services</a> • <a href="#about">About</a> • <a href="#contact">Contact</a></small>
+    </footer>
 </body>
 </html>
