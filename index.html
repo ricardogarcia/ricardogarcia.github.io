@@ -62,9 +62,10 @@
         }
 
         .morph img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+            width: 100%; /* Ensure the GIF displays full size */
+            height: auto; /* Maintain aspect ratio */
+            max-width: none; /* Remove natural scaling limits */
+            border-radius: 10px; /* Optional styling */
         }
 
         footer {
