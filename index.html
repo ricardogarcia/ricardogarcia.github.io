@@ -8,11 +8,11 @@
     <style>
         :root {
             --primary-color: #1e90ff;
-            --text-color: #000;
+            --text-color: #fff;
         }
 
         body {
-            background-image: url('images/background.jpg');
+            background-image: url('images/background-development.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -20,6 +20,16 @@
             font-family: 'Arial', sans-serif;
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
             margin: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Translucent overlay */
+            z-index: -1;
         }
 
         nav, footer {
@@ -84,6 +94,8 @@
     </style>
 </head>
 <body>
+    <div class="overlay"></div>
+
     <nav class="container-fluid">
         <ul>
             <li><strong>Riveted</strong></li>
@@ -108,16 +120,4 @@
                     <h2>Our Expertise</h2>
                     <h3>Web and Mobile Solutions</h3>
                 </hgroup>
-                <p>We create world-class web and mobile applications tailored to your business needs. Whether you're building a responsive website or a powerful mobile app, Riveted is here to bring your vision to life.</p>
-
-                <h3>Blockchain & Cryptocurrency</h3>
-                <p>Expand your business into the blockchain and cryptocurrency landscape with our consulting services. We help integrate blockchain technology, strategize cryptocurrency adoption, and ensure security in decentralized systems.</p>
-            </section>
-        </div>
-    </main>
-
-    <footer class="container">
-        <small>&copy; 2025 Riveted. <a href="#services">Services</a> • <a href="#about">About</a> • <a href="#contact">Contact</a></small>
-    </footer>
-</body>
-</html>
+                <p>We cre
