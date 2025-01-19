@@ -9,7 +9,7 @@
         :root {
             --primary-color: #1e90ff;
             --text-color: #fff; /* All text is white */
-            --background-color: #000;
+            --background-color: #000; /* Entire background is black */
         }
 
         body {
@@ -28,7 +28,7 @@
         nav {
             width: 100%;
             padding: 1em;
-            background: #111; /* Slightly lighter black for contrast */
+            background: var(--background-color); /* Black background for header */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             position: fixed;
             top: 0;
@@ -76,7 +76,7 @@
             width: 100%;
             text-align: center;
             padding: 1em 0;
-            background: #111; /* Slightly lighter black for contrast */
+            background: var(--background-color); /* Black background for footer */
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
         }
 
@@ -98,7 +98,7 @@
     <main>
         <div class="morph-container">
             <div class="morph">
-                <video src="images/consultancy-video.mp4" autoplay muted playsinline></video>
+                <video src="videos/consultancy-video.mp4" autoplay muted playsinline></video>
             </div>
         </div>
         <h1>Bringing Web & Mobile to Life</h1>
