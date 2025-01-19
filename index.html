@@ -61,25 +61,10 @@
             position: relative;
         }
 
-        .morph {
-            width: 300px;
-            height: 300px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            animation: morph 5s infinite alternate;
-        }
-
-        @keyframes morph {
-            0% {
-                background-image: url('images/laptop-placeholder.jpg');
-            }
-            50% {
-                background-image: url('images/smartphone-placeholder.jpg');
-            }
-            100% {
-                background-image: url('images/laptop-placeholder.jpg');
-            }
+        .morph img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
         footer {
@@ -103,7 +88,9 @@
 
     <main>
         <div class="morph-container">
-            <div class="morph"></div>
+            <div class="morph">
+                <img src="images/consultancy-animation.gif" alt="Consultancy Animation">
+            </div>
         </div>
         <h1>Bringing Web & Mobile to Life</h1>
         <p>Innovative solutions for your web and mobile applications, coupled with cutting-edge cryptocurrency consulting.</p>
